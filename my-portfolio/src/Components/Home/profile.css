@@ -1,3 +1,15 @@
+
+#links:hover{
+    color: rgb(178, 121, 235);
+}
+#logo1{
+    font-family: 'Brush Script MT', cursive;;
+}
+#logo1:hover{
+    font-family: 'Brush Script MT', cursive;;
+    font-style: italic;
+    color: rgb(165, 205, 240);
+}
 *{
     margin: 0;
     padding: 0%;

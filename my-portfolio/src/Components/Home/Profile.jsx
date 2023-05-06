@@ -1,9 +1,10 @@
 import Typical from 'react-typical';
 
 import './profile.css'
+import { useNavigate } from 'react-router-dom';
 
 const Profile = () => {
-
+const Nav = useNavigate()
     return (
         <>
         <div className="profile-container">
@@ -13,22 +14,22 @@ const Profile = () => {
                         <div className="colz-icon">
 
                         <a href="https://www.facebook.com/profile.php?id=100026079350746">
-                            <i className="fa fa-facebook-square">
+                            <i className="mx-1 fa fa-facebook-square">
                                     
                             </i>
                         </a>
                         <a href="https://www.instagram.com/mangalthakur00/?next=https%3A%2F%2Fwww.instagram.com%2Fdirect%2Finbox%2F%3F__coig_login%3D1">
-                            <i className="fa fa-instagram">
+                            <i className="mx-1 fa fa-instagram">
                                     
                             </i>
                         </a>
                         <a href="https://www.linkedin.com/in/shiv-raj-singh-6a7883224/?originalSubdomain=in">
-                            <i className="fa fa-linkedin">
+                            <i className="mx-1 fa fa-linkedin">
                                     
                             </i>
                         </a>
                         <a href="https://github.com/Shiv-Raj-Singh/">
-                            <i className="fa fa-github">
+                            <i className="mx-1 fa fa-github">
                                     
                             </i>
                         </a>
@@ -63,7 +64,7 @@ const Profile = () => {
                     </span>
                 </div>
                     <div className="profile-option">
-                        <button className="btn primary-btn">
+                        <button className="btn primary-btn" onClick={()=>Nav('/Contact')} >
                             {" "} 
                             Hire Me 
                         </button>
