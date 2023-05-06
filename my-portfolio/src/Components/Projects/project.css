@@ -74,13 +74,7 @@
     transition: 1s ease-out;
     color: aqua;
 }
-.h6:hover{
-    transform: scale(1.2);
-    /* max-width: fit-content; */
-    width: 50vw;
-    transition: 1s ease-out;
-    color: gold;
-}
+
 
 @media screen and (max-width:650px) {
     .project-container{
