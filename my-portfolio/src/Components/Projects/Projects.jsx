@@ -55,7 +55,7 @@ import data  from './data'
                 </div>
                 </div>
                 <div className="project-about">
-                          <h6 className="h6"> Requirements :- {a.description} </h6>
+                          <h6 className="h6"> Tech-Stack :- {a.description} </h6>
                           <p className="des mt-2">
                               {
                                 a.body.map((v, index)=>{
