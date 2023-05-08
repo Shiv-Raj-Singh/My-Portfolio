@@ -8,7 +8,7 @@ app.use(express.json())
 app.get('/' , (req,res)=>{
     res.send("Hi Welcome on Server of portfolio ")
 })
-app.get('/send/email' , sendMailFunction)
+app.post('/send/email' , sendMailFunction)
 
 app.listen(3000 , ()=>{
     console.log('app is Running on 3000');
