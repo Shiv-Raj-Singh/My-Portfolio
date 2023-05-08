@@ -39,8 +39,9 @@
 
 #root {
   max-width: 180vw;
-  margin: 0 auto;
-  padding: 0.5rem  1rem 10px;
+  margin: auto;
+padding-right: 0%;
+  padding: 1rem;
   background-color: #20313b;
   text-align: center;
 }

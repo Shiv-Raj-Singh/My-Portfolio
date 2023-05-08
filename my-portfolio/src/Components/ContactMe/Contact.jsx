@@ -13,15 +13,18 @@ const Contact = ({back}) => {
         })
     }
 
+    const onSubmitHandle = (e)=>{
+        e.preventDefault()
+        
+        console.log(user);
+    }
     return (
         <>
-        <div className="user" style={{
-            background:back
-        }} >
+        <div className="user" >
             <h4 className="h4 text-center"> Contact-Me </h4>
         <div className="user-container">
             <div className="user-form">
-            <form>
+            <form  onSubmit={onSubmitHandle} >
                 <div className="mb-3">
                 <input type="text" onChange={onChangeHandle} className="form-control" name='name' value={user.name} id="exampleInputPassword1" placeholder='Name' />
             </div>

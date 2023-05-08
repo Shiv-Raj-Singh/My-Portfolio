@@ -5,18 +5,22 @@
     
 }
 .user{
-    height: 80vh;
+    height: fit-content;
+    padding: 3% auto;
     padding: auto;
-    padding-top: 1.3%;
     width: 100%;
-    background-color: wheat;
+    padding-bottom: .5%;
+    background-color: rgb(82, 70, 47);
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
     /* border: yellow 3px dotted; */
+    padding: 2%;
 }
+
 .user-container{
+
     border-radius: 2%;
     width: 70vw;
-    margin: 5% auto;
+    margin: 0.3% auto  .9%;
     height: fit-content;
     padding: 4%;
     background-color: rgb(61, 88, 109);
@@ -76,6 +80,25 @@
     }
 }
 
+@media screen and (max-width:900px) {
+    .user{
+        height: fit-content;
+        padding-bottom: .5%;
+        height: 80vj;
+    }
+    .user-container{
+        flex-direction: column-reverse;
+        align-items: center;
+        margin: 1% auto;
+        margin-bottom: 5%;
+    }
+    .user-pic{
+        margin: .5% auto 3%;
+        height: 40vh;
+    }   
+
+}
+
 @media screen and (max-width:450px) {
 .user{
         width: 98%;
@@ -86,19 +109,21 @@
         flex-direction: column-reverse;
         align-items: center;
         margin: 1% auto;
-        background-color: #142d33;
+        background-color: #0f5364;
         width: 95%;
         margin-bottom: 5%;
     }   
     .user-pic{
-        height: 37vh;
-        width: 60vw;
+        /* height: 47vh; */
+        width: 65%;
         margin: 4% auto;
-
+        height: 28vh;
+        padding-bottom: .5%;
+        background-color: #5c767c;
     }
     .user-form{
         width: 70vw;
-        margin: 1%;
+        margin: 3% auto 0  ;
     }
     .message{
         width: 70vw;
@@ -119,23 +144,4 @@
         padding: auto 2%;
         background-color: rgb(158, 177, 144); 
     } 
-}
-
-@media screen and (max-width:900px) {
-    .user{
-        height: fit-content;
-        padding-bottom: .5%;
-        height: 80vj;
-    }
-    .user-container{
-        flex-direction: column-reverse;
-        align-items: center;
-        margin: 1% auto;
-        margin-bottom: 5%;
-    }
-    .user-pic{
-        margin: .5% auto 3%;
-        height: 40vh;
-    }   
-
 }
