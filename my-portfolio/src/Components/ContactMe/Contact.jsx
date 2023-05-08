@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import './contact.css'
-
+import axios from 'axios';
 const dummy = {
     name : '' , email : ' ' , message : ''
 }
@@ -13,10 +13,17 @@ const Contact = ({back}) => {
         })
     }
 
-    const onSubmitHandle = (e)=>{
+    const onSubmitHandle =async (e)=>{
         e.preventDefault()
-        
-        console.log(user);
+        try {
+            const {data} = await axios.post('https://portfolio-server-qm0x.onrender.com/send/email' , user)
+            data.status && alert('Response Send Successfully ')
+            console.log(data);
+            setUser(dummy)
+
+        } catch (error) {
+            alert(error.message)
+        }
     }
     return (
         <>
