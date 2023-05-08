@@ -168,6 +168,9 @@
         flex-direction: column-reverse;
         margin: 40px 0 0 0;
     }
+    .profile-role-tagline{
+        font-size: 1em;
+    }
     .profile-option{
         display: flex;
         justify-content: space-between;

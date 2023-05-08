@@ -1,24 +1,38 @@
+import { useState } from 'react';
 import './contact.css'
 
+const dummy = {
+    name : '' , email : ' ' , message : ''
+}
+
 const Contact = ({back}) => {
+    const [user , setUser] = useState(dummy)
+    const onChangeHandle = (e)=>{
+        setUser({
+            ...user , [e.target.name] :e.target.value
+        })
+    }
+
     return (
         <>
         <div className="user" style={{
             background:back
         }} >
-
+            <h4 className="h4 text-center"> Contact-Me </h4>
         <div className="user-container">
             <div className="user-form">
             <form>
                 <div className="mb-3">
-                <input type="text" className="form-control" id="exampleInputPassword1" placeholder='Name' />
+                <input type="text" onChange={onChangeHandle} className="form-control" name='name' value={user.name} id="exampleInputPassword1" placeholder='Name' />
             </div>
             <div className="mb-3">
-                <input type="email" className="form-control" id="exampleInputEmail1" placeholder='Email' aria-describedby="emailHelp" />
+                <input type="email" name='email' onChange={onChangeHandle} value={user.email} className="form-control" id="exampleInputEmail1" placeholder='Email' aria-describedby="emailHelp" />
             </div>
             <div classNam="form-floating">
                     <textarea
                     name='message'
+                    value={user.message}
+                    onChange={onChangeHandle}
                     className='message'
                     cols={37}
                     rows={5}

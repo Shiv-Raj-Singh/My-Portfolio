@@ -77,12 +77,18 @@
 }
 
 @media screen and (max-width:450px) {
-    .user-container{
+.user{
+        width: 98%;
+        background-color: rgb(98, 86, 109);
+        height: fit-content;
+    }
+.user-container{
         flex-direction: column-reverse;
         align-items: center;
-        margin-top: 1%;
-        background-color: rgb(119, 123, 124);
-        width: 85%;
+        margin: 1% auto;
+        background-color: #142d33;
+        width: 95%;
+        margin-bottom: 5%;
     }   
     .user-pic{
         height: 37vh;
@@ -91,10 +97,11 @@
 
     }
     .user-form{
-        width: 60vw;
+        width: 70vw;
+        margin: 1%;
     }
     .message{
-        width: 60vw;
+        width: 70vw;
         height: 15vh;
     }
 
@@ -103,7 +110,7 @@
         color: beige;
         padding: auto 2%;
         font-size: 1em;
-        background-color: rgb(49, 53, 46); 
+        background-color: rgb(41, 92, 3); 
     } 
     #btn2:hover{
         width : 100px;
@@ -114,3 +121,21 @@
     } 
 }
 
+@media screen and (max-width:900px) {
+    .user{
+        height: fit-content;
+        padding-bottom: .5%;
+        height: 80vj;
+    }
+    .user-container{
+        flex-direction: column-reverse;
+        align-items: center;
+        margin: 1% auto;
+        margin-bottom: 5%;
+    }
+    .user-pic{
+        margin: .5% auto 3%;
+        height: 40vh;
+    }   
+
+}

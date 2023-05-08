@@ -1,10 +1,11 @@
 .footer-container{
     height: 17.8%;
     width: 100%;
+    padding-top: 1.5%;
     overflow: hidden;
     display: flex;
     justify-content: center;
-    
+    background-color: rgba(0, 0, 0, 0.26);
 }
 .footer-parent{
     width: 100%;
@@ -16,4 +17,31 @@
     height: 130px;
     border: 2px solid yellow;
     width: 100vw;
+}
+
+.foot{
+    color: aliceblue;
+    margin: 1%;
+}
+.fa1{
+    margin: auto;
+    color: aliceblue;
+}
+.span:hover{
+    margin: auto;
+    color: rgb(243, 212, 170);
+}
+
+
+@media screen and (max-width: 600px) {
+    .foot{
+        color: rgb(112, 131, 148);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+    }
+    .fa1{
+        margin: 2% auto;
+    }
 }
