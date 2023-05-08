@@ -94,7 +94,8 @@
 .profile-picture-background{
     width: 99%;
     height: 95%;
-    background-image: url('../../assets//Home/IMG_20210502_103733_415.jpg');
+    /* background-image: url('../../assets//Home/IMG_20210502_103733_415.jpg'); */
+    background-image: url('../../assets//Home/abc.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

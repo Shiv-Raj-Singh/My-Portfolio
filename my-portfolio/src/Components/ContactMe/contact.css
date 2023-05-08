@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    
+}
+.user{
+    height: 80vh;
+    padding: auto;
+    padding-top: 1.3%;
+    width: 100%;
+    background-color: wheat;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    /* border: yellow 3px dotted; */
+}
+.user-container{
+    border-radius: 2%;
+    width: 70vw;
+    margin: 5% auto;
+    height: fit-content;
+    padding: 4%;
+    background-color: rgb(61, 88, 109);
+    /* box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px; */
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    display: flex;
+    justify-content: space-between;
+}
+.user-form{
+    text-align: left;   
+    width: 40%;
+    
+}
+.user-pic{
+    width: 40%;
+    background-color: rgb(223, 110, 110);
+    border-radius: 50%;
+}
+.picture{
+    width:98%;
+    height: 99%;
+    background-image: url('https://www.upwork.com/catalog-images-resized/75f5f1be4668779a47e3c36375bf2b34/large@2x');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    margin: auto;
+}
+.picture:hover{
+    transform: scale(1.07);
+    transition: 2s ease-in-out;
+}
+.message{
+    padding: 1%;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+
+}
+@media screen and (max-width:900px) {
+    .user-container{
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-top: 1%;
+    }   
+    .user-pic{
+        height: 30vh;
+        width: 40vw;
+        margin: 4% auto;
+
+    }
+    .user-form{
+        width: 40vw;
+    }
+    .message{
+        width: 40vw;
+        height: 15vh;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .user-container{
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-top: 1%;
+        background-color: rgb(119, 123, 124);
+        width: 85%;
+    }   
+    .user-pic{
+        height: 37vh;
+        width: 60vw;
+        margin: 4% auto;
+
+    }
+    .user-form{
+        width: 60vw;
+    }
+    .message{
+        width: 60vw;
+        height: 15vh;
+    }
+
+    #btn2{
+        width : 100px;
+        color: beige;
+        padding: auto 2%;
+        font-size: 1em;
+        background-color: rgb(49, 53, 46); 
+    } 
+    #btn2:hover{
+        width : 100px;
+        color: rgb(17, 17, 6);
+        border: 1px solid ;
+        padding: auto 2%;
+        background-color: rgb(158, 177, 144); 
+    } 
+}
+

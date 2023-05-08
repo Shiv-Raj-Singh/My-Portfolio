@@ -39,7 +39,7 @@ const Nav = useNavigate()
                 <div className="profile-details-name">
                     <span className="primary-text">
                         {" "}
-                        Hello I'm <span className="highlighted-text">Shiv Raj Singh</span>
+                        Hi I'm <span className="highlighted-text">Shiv Raj Singh</span>
                     </span>
                 </div>
                 <div className="profile-details-role">
@@ -49,8 +49,7 @@ const Nav = useNavigate()
                         <Typical
                             loop={Infinity} 
                             steps={[
-                                ' Hi` Welcome on My Page ' , 2000 ,
-                                'i m web Developer ' , 1000 ,
+                                'Web Developer ' , 1000 ,
                                 'Full Stack Developer' , 1000 ,
                                 'MERN Stack Developer' , 1000 ,
                                 'Node Js Developer' , 1000 ,
@@ -60,7 +59,7 @@ const Nav = useNavigate()
                         />
                     </h1>
                     <span className="profile-role-tagline">
-                        Hi i am looking for Full Stack Role But I have good experience as Back-end Dev as well as Front End Dev   
+                        Hi I am looking for Full Stack Role and I have good experience of Back-end Projects as well as Front End Projects   
                     </span>
                 </div>
                     <div className="profile-option">

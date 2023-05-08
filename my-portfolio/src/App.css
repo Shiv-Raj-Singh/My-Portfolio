@@ -18,6 +18,21 @@
   --toast-success: #0CBFAE;
   --loader-color: #0CBFAE
 }
+
+
+.btn1{
+  color: black;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(190, 128, 13);
+  text-align: center;
+  font-size: 1.3rem;
+  width: 18vw;
+  padding: 0.5% , 2%; 
+  margin: auto;
+  
+}
+
 .nav-link:hover{
   color: rgb(40, 111, 173);
 }
