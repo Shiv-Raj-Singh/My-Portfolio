@@ -4,7 +4,8 @@
   "description": "",
   "main": "NodeMailer.js",
   "scripts": {
-    "start": "npx nodemon src/app.js"
+    "start": "npx nodemon src/app.js",
+    "dev":"node src/app.js"
   },
   "type": "module",
   "keywords": [],
