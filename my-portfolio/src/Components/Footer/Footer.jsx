@@ -29,6 +29,12 @@ const Footer = () => {
                                     
                             </i>
                         </a>
+                        <a href="https://leetcode.com/mt932747/">
+                            <span  className='l-h' >LeetCode</span>
+                        </a> 
+                        <a href="https://www.hackerrank.com/Shiv_Raj_Singh?hr_r=1">
+                            {"  "} <span className='l-h' >H-Rank</span>
+                        </a>
                         </div>
                     </div>
 

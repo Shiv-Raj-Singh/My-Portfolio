@@ -33,6 +33,12 @@ const Nav = useNavigate()
                                     
                             </i>
                         </a>
+                        <a href="https://leetcode.com/mt932747/">
+                            <span  className='l-h' >LT-Code</span>
+                        </a> 
+                        <a href="https://www.hackerrank.com/Shiv_Raj_Singh?hr_r=1">
+                            {"  "} <span className='l-h' >H-Rank</span>
+                        </a>
                         </div>
                     </div>
 
@@ -67,7 +73,7 @@ const Nav = useNavigate()
                             {" "} 
                             Hire Me 
                         </button>
-                        <a href="shivrajCV.pdf" download={'shivraj resume'}  >
+                        <a href="shiv_CV.pdf" download={'shivraj resume'}  >
                             <button className="btn highlighted-btn">
                                 Get Resume
                             </button>
