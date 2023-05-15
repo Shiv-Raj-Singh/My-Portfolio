@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import './contact.css'
 import axios from 'axios';
 const dummy = {
@@ -7,6 +7,7 @@ const dummy = {
 
 const Contact = ({back}) => {
     const [user , setUser] = useState(dummy)
+    const btn = useRef()
     const onChangeHandle = (e)=>{
         setUser({
             ...user , [e.target.name] :e.target.value
@@ -15,16 +16,21 @@ const Contact = ({back}) => {
 
     const onSubmitHandle =async (e)=>{
         e.preventDefault()
+        btn.current.setAttribute('disabled' , true)
         try {
+            
             const {data} = await axios.post('https://portfolio-server-qm0x.onrender.com/send/email' , user)
             data.status && alert('Response Send Successfully ')
             console.log(data);
             setUser(dummy)
-
+            btn.current.removeAttribute('disabled')
+            
         } catch (error) {
             alert(error.message)
+            btn.current.removeAttribute('disabled')
         }
     }
+
     return (
         <>
         <div className="user" >
@@ -33,10 +39,10 @@ const Contact = ({back}) => {
             <div className="user-form">
             <form  onSubmit={onSubmitHandle} >
                 <div className="mb-3">
-                <input type="text" onChange={onChangeHandle} className="form-control" name='name' value={user.name} id="exampleInputPassword1" placeholder='Name' />
+                <input type="text" required onChange={onChangeHandle} className="form-control" name='name' value={user.name} id="exampleInputPassword1" placeholder='Name' />
             </div>
             <div className="mb-3">
-                <input type="email" name='email' onChange={onChangeHandle} value={user.email} className="form-control" id="exampleInputEmail1" placeholder='Email' aria-describedby="emailHelp" />
+                <input type="email" required name='email' onChange={onChangeHandle} value={user.email} className="form-control" id="exampleInputEmail1" placeholder='Email' aria-describedby="emailHelp" />
             </div>
             <div classNam="form-floating">
                     <textarea
@@ -53,7 +59,7 @@ const Contact = ({back}) => {
 
 
 
-                <button type="submit" id='btn2' className="btn btn1 btn-primary">Submit</button>
+                <button type="submit" id='btn2' ref={btn} className="btn btn1 btn-primary">Submit</button>
             </form>
             </div>
             <div className="user-pic">
