@@ -1,45 +1,52 @@
-import './project.css'
-import data  from './data'
+import React from "react";
+import "./project.css";
+import data from "./data";
+import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
-  const Projects = () => {
-    return(
-        <>
-              {
-                  data.map((a)=>{
-                      return <div className="project-container fluid">
-              <div className="project-links">
-                <h4 className="h4"> {a.name} </h4>
-                <div className="links">
-                <a href={a.github}>
-                            <i className=" h3 github fa fa-github">
-                                    
-                            </i>
+const Projects = () => {
+  return (
+    <div className="projects-container">
+      {data.map((project, index) => (
+        <div className="project-card" key={index}>
+          <div className="project-header">
+            <h4 className="project-title">{project.name}</h4>
+            <div className="project-links">
+              <a
+                href={project.github}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="project-link"
+              >
+                <FaGithub className="icon github-icon" />
+                Github
+              </a>
+              {project.live && (
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="project-link live-link"
+                >
+                  <FaExternalLinkAlt className="icon live-icon" />
+                  Live
                 </a>
-            {
-                a.live && <a href={a.link}>                    
-                <i className=" h3 mx-3 live-project fa fa-chrome">
-                live 
-                </i>
-                </a>
-            }
-                </div>
-                </div>
-                <div className="project-about">
-                          <h6 className="h6"> Tech-Stack :- {a.description} </h6>
-                          <p className="des mt-2">
-                              {
-                                a.body.map((v, index)=>{
-                                    return <ul> {v} </ul>
-                                })
-                              }
-                          </p>
-              </div>
+              )}
+            </div>
           </div>
-        })
-} 
-    </>    
-  )
-  };
-  
-  export default Projects;
-  
+          <div className="project-description">
+            <h6 className="tech-stack">Tech Stack: {project.description}</h6>
+            <ol className="project-body">
+              {project.body.map((point, i) => (
+                <li key={i} className="project-point">
+                  {point}
+                </li>
+              ))}
+            </ol>
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+};
+
+export default Projects;

@@ -1,16 +1,11 @@
-
-import Skill from "../Components/AboutMe/Skill";
-import Footer from "../Components/Footer/Footer";
-import Navbar from "../Components/Home/Navbar";
+import Skill from "../Components/AboutMe/About";
 
 const AboutPage = () => {
-    return (
-        <>  
-            <Navbar/>
-            <Skill/>
-            <Footer/>
-        </>
-    );
-}
+  return (
+    <>
+      <Skill />
+    </>
+  );
+};
 
 export default AboutPage;

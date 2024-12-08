@@ -1,115 +1,122 @@
 const projectData = [
   {
-    name: "Slot Booking App",
+    name: "Slot Booking System",
     description: "MERN Stack",
     body: [
-      'In this Project Performed Slot Booking Operation',
-      'Anyone can Book the slot in future time and Slot must be not booked already',
-      'Date and Time Should be Valid and Upcoming',
-      'Dependencies React.Js ,NodeJs ,ExpressJs ,MySQL so on'
+      "Implemented slot booking functionality for future appointments.",
+      "Users can book slots that are not already reserved.",
+      "Validated date and time to ensure they are upcoming and valid.",
+      "Technologies used include React.js, Node.js, Express.js, and MySQL."
     ],
-    github : 'https://github.com/Shiv-Raj-Singh/Slot-Book-Task.git',
-    live : true,
-    link : 'https://slot-books.netlify.app/'
+    github: "https://github.com/Shiv-Raj-Singh/Slot-Book-Task.git",
+    live: true,
+    link: "https://slot-books.netlify.app/"
   },
   {
-    name: "InternShala Clone",
+    name: "InternShala Clone Application",
     description: "MERN Stack",
     body: [
-      'In this Project build a Clone of InternShala Application',
-      'Student Register and capitalize the available opportunities ',
-      'Colleges and Organizations can offer the opportunities',
-      'Dependencies React.Js ,NodeJs ,ExpressJs ,MongoDB , JWT , Mongoose and so on'
+      "Developed a clone of the InternShala platform.",
+      "Students can register and access various internship opportunities.",
+      "Organizations and colleges can post and manage their opportunities.",
+      "Technologies used include React.js, Node.js, Express.js, MongoDB, JWT, and Mongoose."
     ],
-    github : 'https://github.com/Shiv-Raj-Singh/Projects/tree/Inter-Shala-Clone',
-    live : false,
-    link : ''
+    github: "https://github.com/Shiv-Raj-Singh/Projects/tree/Inter-Shala-Clone",
+    live: false,
+    link: ""
   },
   {
-    name: "Blog Management App",
+    name: "Blog Management Platform",
     description: "MERN Stack",
     body: [
-      'In this Project Performed REST APIs for User and Blogs',
-      "Where user has to Register account And LogIn",
-      'User can create Blogs and perform CRUD operations',
-      "while User wanna perform CRUD operation user must be authorized ",
-      'Dependencies React.Js ,NodeJs ,ExpressJs ,MongoDB , Joi and so on'
+      "Built REST APIs for managing users and blog posts.",
+      "Users can register, log in, and perform CRUD operations on blogs.",
+      "Implemented authentication and authorization for secure access.",
+      "Technologies used include React.js, Node.js, Express.js, MongoDB, and Joi."
     ],
-    github : 'https://github.com/Shiv-Raj-Singh/Projects/tree/blogging-site-project-1',
-    live : false,
-    link : 'https://slot-books.netlify.app/'
+    github: "https://github.com/Shiv-Raj-Singh/Projects/tree/blogging-site-project-1",
+    live: false,
+    link: "https://slot-books.netlify.app/"
   },
   {
-    name: "URL - Shortner",
+    name: "URL Shortener Service",
     description: "MERN Stack",
     body: [
-      "in this Project We can put long URL and in Return get a new Short URL",
-      'that new Short Url will be work on any browser and re-direct on main url result',
-      'Url Should be Valid and working',
-      'Dependencies React.Js ,NodeJs ,ExpressJs ,MongoDB, Redis axios etc '
+      "Developed a service to convert long URLs into shorter, shareable ones.",
+      "Shortened URLs redirect to the original links across any browser.",
+      "Validated input URLs to ensure they are functional.",
+      "Technologies used include React.js, Node.js, Express.js, MongoDB, Redis, and Axios."
     ],
-    github : 'https://github.com/Shiv-Raj-Singh/Url---Shortner---Project--4',
-    live : true,
-    link : 'https://url-shortner-project-4.vercel.app/'
+    github: "https://github.com/Shiv-Raj-Singh/Url---Shortner---Project--4",
+    live: true,
+    link: "https://url-shortner-project-4.vercel.app/"
   },
   {
-    name: "To-Do App",
-    description: "React.Js Bootstrap",
+    name: "To-Do Task Manager",
+    description: "React.js and Bootstrap",
     body: [
-      "in this project we have performed To-do tasks operations",
-      "Where user has to Register account",
-        'User can create any task and perform CRUD operations',
-      'Dependencies React , CSS , Local-Storage and Bootstrap for User-Interface'
+      "Implemented task management features with full CRUD operations.",
+      "Users can register accounts and manage their to-do lists.",
+      "Technologies used include React.js, Bootstrap, CSS, and Local Storage."
     ],
-    github : 'https://github.com/Shiv-Raj-Singh/To-Do-Task/tree/main/build_formula_task',
-    live : true,
-    link : 'https://url-shortner-project-4-85wl.vercel.app/'
+    github: "https://github.com/Shiv-Raj-Singh/To-Do-Task/tree/main/build_formula_task",
+    live: true,
+    link: "https://url-shortner-project-4-85wl.vercel.app/"
   },
   {
-    name: "Chatting App",
+    name: "Real-Time Chat Application",
     description: "MERN Stack",
     body: [
-      "in this project we have done REST APIs for Users",
-      "Where user has to Register account with strong validation (unique email & phone strong password )",
-      "he has to login in return he will get a JWT Token and Select a desire Room to start Chat",
-      "if User forget the Password then he can Reset that easily by email",
-      'Dependencies NodeJs , express.Js, Socket.IO , MongoDB , Mongoose , JWT (generate auth token ) , bcrypt (Hash the Password) , Joi (Validate the data ) , Nodemailer(sent-email),so on' ,
-      'Used React , CSS and Bootstrap for User-Interface'
+      "Built REST APIs for user authentication and chat rooms.",
+      "Users can register with unique email and phone validation.",
+      "Implemented JWT-based authentication for secure access.",
+      "Users can join chat rooms and communicate in real time.",
+      "Password recovery functionality is enabled via email.",
+      "Technologies used include Node.js, Express.js, Socket.IO, MongoDB, and React."
     ],
-    github : 'https://github.com/Shiv-Raj-Singh/Amazon-Clone-App.git',
-    live : true,
-    link : 'https://chat-app-frontend-sigma.vercel.app/'
+    github: "https://github.com/Shiv-Raj-Singh/Amazon-Clone-App.git",
+    live: true,
+    link: "https://chat-app-frontend-sigma.vercel.app/"
   },
   {
-    name: "Amazon-Clone App",
-    description: "NodeJs ExpressJs MongoDB",
+    name: "E-Commerce API (Amazon Clone)",
+    description: "Node.js, Express.js, MongoDB",
     body: [
-      "in this project we have done REST APIs for User,Product,Cart and Order",
-      "Where user has to Register account with strong validation (unique email & phone strong password )",
-      "he has to login in return he will get a JWT Token",
-      "Performed Authentication and Authorization for add product in cart and order them",
-      'Dependencies NodeJs , express.Js, MongoDB , Mongoose , JWT (generate auth token ) , bcrypt (Hash the Password) , Joi (Validate the data ) , Nodemailer(sent-email) so on'
+      "Designed REST APIs for users, products, carts, and orders.",
+      "Users can register with strong validation and log in to get JWT tokens.",
+      "Implemented authentication and authorization for secure operations.",
+      "Technologies used include Node.js, Express.js, MongoDB, Mongoose, and Nodemailer."
     ],
-    github : 'https://github.com/Shiv-Raj-Singh/Amazon-Clone-App.git',
-    live : false,
-    link : ''
+    github: "https://github.com/Shiv-Raj-Singh/Amazon-Clone-App.git",
+    live: false,
+    link: ""
   },
   {
-    name: "Book Management System",
-    description: "NodeJs ExpressJs MongoDB",
+    name: "Book Review Management System",
+    description: "Node.js, Express.js, MongoDB",
     body: [
-      "in this project we have done REST APIs for User , Books and Reviews",
-      "Where user has to Register account with strong validation (unique email & phone strong password )",
-      "he has to login in return he will get a JWT Token",
-      "Performed Authentication and Authorization for create new Books , update existing books , delete existing books",
-      "if any User or Guest want to visit the app and read the books then he can only those books he can read which are published and as well as he can give the review on them ",
-      'in this project i used NodeJs , express Js, MongoDB , Mongoose , JWT (generate auth token ) , bcrypt (Hash the Password) , Joi (Validate the data ) ,'
+      "Developed REST APIs for managing users, books, and reviews.",
+      "Users can register accounts, log in, and perform CRUD operations on books.",
+      "Guests can access published books and leave reviews.",
+      "Technologies used include Node.js, Express.js, MongoDB, Mongoose, and JWT."
     ],
-    github : 'https://github.com/Shiv-Raj-Singh/Projects/tree/project/book-management',
-    live : false,
-    link : ''
+    github: "https://github.com/Shiv-Raj-Singh/Projects/tree/project/book-management",
+    live: false,
+    link: ""
   },
+  {
+    name: "Weather Forecast App",
+    description: "React.js and OpenWeather API",
+    body: [
+      "Built a web application to display real-time weather updates.",
+      "Users can search for the weather conditions of any city.",
+      "Integrated OpenWeather API for reliable data fetching.",
+      "Technologies used include React.js, Axios, and Bootstrap."
+    ],
+    github: "https://github.com/Shiv-Raj-Singh/Weather-Forecast-App",
+    live: true,
+    link: "https://weather-forecast-app.vercel.app/"
+  }
 ];
 
-
-export default projectData
+export default projectData;

@@ -1,196 +1,144 @@
-
-#links:hover{
-    color: rgb(178, 121, 235);
-}
-#logo1{
-    font-family: 'Brush Script MT', cursive;;
-}
-#logo1:hover{
-    font-family: 'Brush Script MT', cursive;;
-    font-style: italic;
-    color: rgb(165, 205, 240);
-}
-*{
-    margin: 0;
-    padding: 0%;
-    box-sizing: border-box;
-}
-.profile-container{
-    display: flex;
-    width: 100%;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    height: 105;
-    min-height: fit-content;
-    background-image: url('../../assets/Home/bg.jpg');
-    padding: 2%;
-    overflow: hidden;
-}
-.profile-parent{
-    display: flex;
-    color: aliceblue;
-    align-items: center;
-}
-.profile-details-name{
-    font-size: 24px;
-    font-family: 'poppins Semibold' ;
-}
-.profile-details-role{
-   display: flex;
-   flex-direction: column;
-   justify-content: space-between;
-   margin: 15px 0 25px 0;
-}
-.profile-option .primary-btn{
-    background-color: rgb(8, 126, 8);
+/* General Page Styling */
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTk9ti0H0X6yZvxLPZi-jiR2lqPztB-5KTbHw&s');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 20px;
+  text-align: center;
 }
 
-.profile-details-role h1 {
-  font-size: 40px;
-  font-family: cursive;
+.profile-parent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  max-width: 900px;
 }
 
-.primary-text{
-    color: (--white);
+.profile-details-name {
+  margin-bottom: 10px;  /* Reduced margin */
 }
 
-.highlighted-text{
-    color: var(--dark -orange);
-}
-.profile-role-tagline{
-    font-size: 1.5em;
-    margin: 5px 0px 0 0;
-    font-family: 'poppins-light';
+.primary-text {
+  font-size: 2rem;
 }
 
-@media screen and (min-width : 1000px) {
-    .profile-role-tagline{
-        margin: 10% ;
-        font-family: 'poppins-light';
-    }    
+.highlighted-text {
+  color: #ffb84d; /* Highlighted text color */
 }
 
-.profile-option .highlighted-btn{
-    margin: 0 0 0 20px;
-}
-.profile-option .highlighted-btn:hover{
-    margin: 0 0 0 20px;
-    background-color: blueviolet;
-    color: gold;
+.profile-details-role h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;  /* Reduced margin */
 }
 
-.profile-picture{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 1px 0px 0px var(--white);
-    border-radius: 50%;
-    width: 370px;
-    height: 380px;
-    margin: 0 20px 0 20px ;
+.profile-role-tagline {
+  font-size: 1.2rem;
+  margin-bottom: 15px;  /* Reduced margin */
 }
 
-.profile-picture-background{
-    width: 99%;
-    height: 95%;
-    /* background-image: url('../../assets//Home/IMG_20210502_103733_415.jpg'); */
-    background-image: url('../../assets//Home/abc.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 50%;
-}
-.profile-picture-background:hover{
-    transform: scale(1.07);
-    transition: 1s ease-out ;
-}
-.colz .colz-icon i{
-    color: aliceblue;
-    padding: 8px;
-    padding-left: 0;
+.profile-option {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
 }
 
-.colz .colz-icon i:hover{
-   transform: scale(1.5);
+.profile-option .btn {
+  padding: 12px 30px;
+  font-size: 1.2rem;
+  border-radius: 5px;
 }
 
-@media screen and (max-width : 1100px ){
-    .profile-picture{
-        margin: 0 6px 0 80px ;
-    }
-    .profile-details-name{
-        font-size: 20px;
-    }
-    .profile-details-role .primary-text{
-        font-size: 12px ;
-    }
-    .profile-details .btn{
-        width: 120px;
-        padding: 13px 0 ;
-        z-index: 700;
-    }
-}
-@media screen and (max-width : 1110px ){
-    .profile-picture{
-        height: 320px;
-        width: 320px;
-        margin: 0 0 0 4px;
-    }
-    .profile-role-tagline{
-        margin: 1% 0 0 0;
-    }
-    .profile-picture{
-        margin: 0 !important ;
-    }
-    .profile-parent{
-        flex-direction: column-reverse;
-        margin: 40px 0 0 0;
-    }
-    .profile-option{
-        display: flex;
-        justify-content: space-around;    
-    }
-    .profile-details{
-        margin: 2px 0 0 ;
-    }
-    .profile-option .profile-details-role{
-        /* text-align: center; */
-        color: brown;
-    }
+.primary-btn {
+  background-color: #3498db; /* Blue background for Hire Me button */
+  border: none;
+  color: white;
+  transition: background-color 0.3s ease;
 }
 
-@media screen and (max-width : 810px ){
-    .profile-picture{
-        margin: 0 !important ;
-    }
-    .profile-parent{
-        flex-direction: column-reverse;
-        margin: 40px 0 0 0;
-    }
-    .profile-role-tagline{
-        font-size: 1em;
-    }
-    .profile-option{
-        display: flex;
-        justify-content: space-between;
-    }
-    .profile-details{
-        margin: 25px 0 0 ;
-    }
-    .profile-option .profile-details-role{
-        text-align: center;
-        /* color: brown; */
-    }
+.primary-btn:hover {
+  background-color: #2980b9; /* Darker blue on hover */
 }
 
-@media screen and (max-width : 375px ){
-    .profile-picture{
-        height: 220px;
-        width: 220px;
-        margin: -90px;
-    }
-    .profile-details{
-        width: 90%;
-    }
-}    
+.highlighted-btn {
+  background-color: #f39c12; /* Yellow-orange background for Get Resume button */
+  border: none;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.highlighted-btn:hover {
+  background-color: #e67e22; /* Darker yellow-orange on hover */
+}
+
+/* Profile Image Styling */
+.profile-picture {
+  margin-top: 20px;  /* Reduced margin */
+  margin-bottom: 20px;  /* Reduced margin */
+}
+
+.profile-img {
+  width: 350px;  /* Larger image size */
+  height: 350px;
+  border-radius: 50%;
+  object-fit: cover; /* Crop the image to center face */
+  object-position: top; /* Crop from the bottom to keep face visible */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
+  transform: translateY(-50px); /* Pull image down to ensure face visibility */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .primary-text {
+    font-size: 1.5rem;
+  }
+
+  .highlighted-text {
+    font-size: 1.5rem;
+  }
+
+  .profile-details-role h2 {
+    font-size: 1.5rem;
+  }
+
+  .profile-role-tagline {
+    font-size: 1rem;
+  }
+
+  .profile-option .btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+
+  .profile-img {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-container {
+    padding: 10px;
+  }
+
+  .primary-text {
+    font-size: 1.2rem;
+  }
+
+  .profile-role-tagline {
+    font-size: 0.9rem;
+  }
+
+  .profile-img {
+    width: 200px;
+    height: 200px;
+  }
+}
